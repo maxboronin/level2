@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="ru.geekbrains.Controller">
+    <TextArea fx:id="mainTextArea" editable="false" VBox.vgrow="ALWAYS" />
+    <HBox>
+        <TextField fx:id="msgField" promptText="Напишите сюда что-то..." HBox.hgrow="ALWAYS" onAction="#onPressEnter"/>
+        <Button minHeight="20" prefWidth="100" maxWidth="100" onAction="#clickSendBtn" text="Отправить" />
+    </HBox>
+    <GridPane>
+        <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints maxWidth="95.0" minWidth="10.0" prefWidth="27.0" />
+            <ColumnConstraints maxWidth="179.0" minWidth="10.0" prefWidth="173.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        </rowConstraints>
+    </GridPane>
+</VBox>
